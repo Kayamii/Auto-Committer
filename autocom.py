@@ -28,6 +28,8 @@ def commit_file():
     print(f"Committed file {filename}")
     os.remove(filename)
 
-while True:
+for i in range(6):
+    
     commit_file()
     time.sleep(10)
+    i+=1
